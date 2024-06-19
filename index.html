@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On Off</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+       <marquee> <h2>Java Script Small Project</h2></marquee>
+    <h1>Bulb On and Off Task</h1>
+    <p>When Switch ON button clicks then bulb becomes ON and when Switch OFF button clicks then bulb becomes off</p>
+   <h1 id="demo"></h1>
+    <button class="btn1" onclick="main()">Switch ON</button>
+    <img id="img" src="./img.png"/>
+    <button class="btn2" onclick="main1()">Switch OFF</button>
+</div>
+<h1 id="head" style="color:brown; text-align: center;">raa</h1>
+<p id="para">k</p>
+
+<h1>Conditional Statements</h1>
+<h2>Enter First Number</h2>
+<input type="text" id="first">
+<h2>Enter Second Number</h2>
+<input type="text" id="second">
+<button type="button" onclick="main2()">Submit</button>
+<h2>Result</h2>
+<input type="text" id="res">
+<h2>Grade</h2>
+<input type="text" id="gd">
+
+
+<script>
+    function main2(){
+    document.getElementById("res").value=(document.getElementById("first").value/document.getElementById("second").value);
+  }
+   
+    function main()
+    {
+        document.getElementById("img").setAttribute("src","./img1.png")
+        document.getElementById("demo").innerHTML="The bulb is ON state"
+    }
+    function main1()
+    {
+        document.getElementById("img").setAttribute("src","./img.png")
+         document.getElementById("demo").innerHTML="The bulb is OFF state"
+
+    }
+    document.getElementById("head").innerHTML="Constant Arrays:"
+    const name=["Raji","Nandu","Mahanya"];
+    name[0]="Puppy";
+    name.push("Naveen");
+    document.getElementById("para").innerHTML=name;
+
+    function main2(){
+    document.getElementById("res").value=(document.getElementById("first").value/document.getElementById("second").value);
+   var per=document.getElementById("res") ;
+   var grade; 
+
+
+  switch(Math.floor(per/10))
+  {
+    case 1:
+        grade="Excellent"; 
+        break;
+    case 2:
+        grade="Very Good"; 
+        break;
+    case 3:
+        grade="Good"; 
+        break;
+    case 4:
+        grade="Pass"; 
+        break;
+    default:
+        grade="Fail"; 
+        break;
+
+  }
+  document.getElementById("gd").value=grade;
+
+}
+document.writeln("<H3>Arrays<h3>")
+document.writeln("<br>")
+
+var a=[10,20,30,40,50]
+document.writeln("a= "+a+"<br>");
+document.writeln("type of a: "+typeof a+"<br>")
+document.writeln("length of a "+a.length+"<br>")
+document.writeln("a[0]= "+a[0]+"<br>")
+document.writeln("a[1]= "+a[1]+"<br>")
+document.writeln("a[2]= "+a[2]+"<br>")
+document.writeln("a[3]= "+a[3]+"<br>")
+document.writeln("a[4]= "+a[4]+"<br>"+"<br>")
+
+document.writeln("<h3>String Methods<h3>")
+var a="Welcome to Java Script";
+document.writeln("a: "+a+"<br>")
+document.writeln("Position of m in a: "+a.indexOf("m")+"<br>")
+document.writeln("Last Index of of m in a: "+a.lastIndexOf("m")+"<br>")
+document.writeln("Search of m in a: "+a.search("m")+"<br>")
+document.writeln("Slicing: "+a.slice(0,4)+"<br>")
+document.writeln("replace: "+a.replace("Java Script","JS")+"<br>")
+document.writeln(a.toUpperCase()+"<br>")
+document.writeln(a.toLowerCase()+"<br>"+"<br>")
+
+
+
+
+
+
+
+
+document.writeln("Looping Function: "+"<br>"+"<br>");
+for(i=0;i<=100;i++){
+    if(i%10==0){
+
+        document.writeln("<br>"+i)
+    }
+    
+}
+
+
+   
+  
+
+  
+   
+    
+</script>
+
+
+
+</body>
+</html>

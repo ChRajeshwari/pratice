@@ -29,6 +29,11 @@
 <input type="text" id="res">
 <h2>Grade</h2>
 <input type="text" id="gd">
+  
+
+
+
+
 
 
 <script>
@@ -122,11 +127,60 @@ for(i=0;i<=100;i++){
 }
 
 
-   
-  
 
-  
+document.writeln("<h2>Date Object<h2> ")
+    var a=new Date()
+    document.writeln("Current Date: "+a+"<br>")
+    document.writeln("Year: "+a.getFullYear()+"<br>")
+    document.writeln("Month: "+a.getMonth()+"<br>")
+    document.writeln("Date: "+a.getDate()+"<br>")
+    document.writeln("Day: "+a.getDay()+"<br>")
+    document.writeln("Hours: "+a.getHours()+"<br>")
+    document.writeln("Minutes: "+a.getMinutes()+"<br>")
+    document.writeln("Seconds: "+a.getSeconds()+"<br>")
+    document.writeln("Time: "+a.getTime()+"<br>"+"<br>")
+
+
+    document.writeln("<h2>Array Methods</h2>")
+    document.writeln("<h3>")
+    var a=[10,40,30,70,50,60]
+    document.writeln("a= "+a+"<br>")
+    document.writeln("Sort()= "+a.sort()+"<br>")
+    document.writeln("reverse()= "+a.reverse()+"<br>")
+    document.writeln("push()= "+a.push(5)+"<br>")
+    document.writeln(a+"<br>")
+    document.writeln("pop()= "+a.pop()+"<br>")
+    document.writeln(a+"<br>")
+    document.writeln("Shift()= "+a.shift()+"<br>")
+    document.writeln(a+"<br>")
+    document.writeln("unshift()= "+a.unshift()+"<br>")
+    document.writeln(a+"<br>")
+    document.writeln("splice()= "+a.splice(1,2,18)+"<br>")
+    document.writeln(a+"<br>")
+    document.writeln("slice()= "+a.slice(0,3)+"<br>")
+    document.writeln(a+"<br>")
+
+    document.writeln("<h2>Event Listeners</h2>"+"<br>")
+    document.writeln("<h3>1. Onblur Event</h3>"+"<br>")
    
+
+    function myFunction(){
+        let a=document.getElementById("blur")
+        a.value=a.value.toUpperCase();
+       
+    }
+
+
+
+
+
+    
+
+
+    
+    
+
+
     
 </script>
 
